@@ -1,6 +1,6 @@
 function omf.cli.reload
   if not contains -- --force $argv
-    if count (jobs) >/dev/null ^&1
+    if count (jobs) &> /dev/null
       __omf.cli.reload.job_warning
       return 1
     end

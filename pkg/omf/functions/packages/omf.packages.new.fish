@@ -34,7 +34,7 @@ function __omf.packages.new.from_template -a path github user name
       end)$target
     end
   end
-  popd >/dev/null ^&1
+  popd &> /dev/null
 end
 
 
